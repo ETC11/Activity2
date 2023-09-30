@@ -20,7 +20,7 @@ app.post('/profile', (req, res) => {
 });
 
 //http://localhost:3000/name
-app.post('/name', (req, res) => {
+app.get('/name', (req, res) => {
    res.send('<h1>C0855971 - KARAN SHRESTHA</h1>');
 });
 
