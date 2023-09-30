@@ -21,7 +21,7 @@ app.post('/profile', (req, res) => {
 
 //http://localhost:3000/name
 app.post('/name', (req, res) => {
-   res.send('<h1>C0855971 - Karan Shrestha</h1>');
+   res.send('<h1>C0855971 - KARAN SHRESTHA</h1>');
 });
 
 //http://localhost:3000/admin
