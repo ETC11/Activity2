@@ -15,8 +15,8 @@ app.get('/', function (req, res) {
 });
 
 //http://localhost:3000/profile
-app.get('/profile', (req, res) => {
-   res.send('PROFILE PAGE');
+app.get('/profile', function (req, res) {
+   res.send('<h1>PROFILE PAGE<h1>');
 });
 
 //http://localhost:3000/name
