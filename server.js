@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 });
 
 //http://localhost:3000/profile
-app.post('/profile', (req, res) => {
+app.get('/profile', (req, res) => {
    res.send('PROFILE PAGE');
 });
 
