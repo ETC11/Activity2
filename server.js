@@ -1,4 +1,5 @@
 let express = require('express');
+const path = require('path');
 
 let app = express();
 
@@ -10,13 +11,12 @@ app.use(express.urlencoded({ extended: true })); // for parsing application/x-ww
 
 //http://localhost:3000/
 app.get('/', function (req, res) {
-   res.send('<h1>Home Page</h1>');
+   res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 //http://localhost:3000/profile
 app.post('/profile', (req, res) => {
-   console.log(req.body);
-   res.json(req.body);
+   res.send('PROFILE PAGE');
 });
 
 //http://localhost:3000/name
